@@ -1,3 +1,9 @@
+"""
+This code is copied from
+https://github.com/hichamjanati/debiased-ot-barycenters
+29.11.2021
+"""
+
 import numpy as np
 
 def make_ellipse(width=100, mean=None, semimaj=0.3,

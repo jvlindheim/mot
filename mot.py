@@ -386,7 +386,7 @@ def scatter_distr(posns, masses, n_plots_per_row=2, scale=4, invert=False, disk_
     elif isinstance(subtitles, str):
         subtitles = [subtitles]*n_plots
     else:
-        assert len(subtitles == n_plots), "length of subtitles array needs to be equal to number of plots"
+        assert len(subtitles) == n_plots, "length of subtitles array needs to be equal to number of plots"
 
     xmin, xmax, ymin, ymax = min([pos[:, 0].min() for pos in posns]), max([pos[:, 0].max() for pos in posns]), min([pos[:, 1].min() for pos in posns]), max([pos[:, 1].max() for pos in posns])
 
