@@ -13,4 +13,4 @@ git clone https://github.com/jvlindheim/mot.git
 ```
 pip install --user numpy scipy matplotlib POT
 ```
-If you want to run the demo notebook, you will also need [Jupyter Notebook or JupyterLab](https://jupyter.org/install) installed.
+If you want to run the demo notebook, you will also need to have [Jupyter Notebook or JupyterLab](https://jupyter.org/install) installed.
