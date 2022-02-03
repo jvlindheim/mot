@@ -27,7 +27,7 @@ def bary_ref(posns, masses, weights=None, shuffle=False, precision=7):
     weights=None: array of same length as number of measures, needs to sum to one.
         These are the weights in the barycenter problem, typically denoted by lambda_i.
         If None is given, use uniform weights.
-    shuffle=False: If set to True, the indices of all input mass arrays their and corresponding points
+    shuffle=False: If set to True, the indices of all input mass arrays and their corresponding points
         are randomly shuffled.
     precision=7: Support point positions of barycenter are rounded to a grid. This parameter
         indicates the number of decimals to which the positions are rounded.
@@ -58,13 +58,16 @@ def tuples_reference(posns, masses, min_bary_mass=1e-10, shuffle=False):
     Approximative multi-marginal optimal transport (MOT) algorithm
     that constructs the MOT using 2-marginal transport plans to a reference measure.
 
+    Parameters
+    ----------
     posns: Measure support positions list/array of length n. Can be given just a 2d-array, if the positions are always the same.
     masses: Masses/weights of the given measure support points (need to sum to one for each measure)
     min_bary_mass: All points with less than this mass will be discarded.
-    shuffle=False: If set to True, the indices of all input mass arrays their and corresponding points
+    shuffle=False: If set to True, the indices of all input mass arrays and their corresponding points
         are randomly shuffled.
         
-    returns: 
+    Returns
+    -------
     bary_tuples: (M, N)-shaped array indicating the MOT support tuples.
         Each row contains an index of a support point from each measure.
     bary_masses: MOT masses corresponding to the support tuples.
@@ -118,7 +121,6 @@ def bary_from_ref_tuples(bary_tuples, bary_masses, posns, masses, weights, preci
         These are the weights in the barycenter problem, typically denoted by lambda_i.
     precision=7: Support point positions of barycenter are rounded to a grid. This parameter
         indicates the number of decimals to which the positions are rounded.
-        
     
     Returns
     -------
@@ -148,7 +150,7 @@ def bary_greedy(posns, masses, weights=None, shuffle=False, precision=7):
     masses: Masses/weights of the given measure support points (need to sum to one for each measure)
     weights=None: array of same length as number of measures, needs to sum to one.
         These are the weights in the barycenter problem, typically denoted by lambda_i.
-    shuffle=False: If set to True, the indices of all input mass arrays their and corresponding points
+    shuffle=False: If set to True, the indices of all input mass arrays and their corresponding points
         are randomly shuffled.
     precision=7: Support point positions of barycenter are rounded to a grid. This parameter
         indicates the number of decimals to which the positions are rounded.
@@ -291,7 +293,7 @@ def prepare_data(posns, masses, min_mass=1e-10, shuffle=False):
     masses: Masses/weights of the given measure support points (need to sum to one for each measure)
     min_mass=1e-10: Every point with a mass less than this parameter is discarded.
     min_mass=1e-10: Every point with a mass less than this parameter is discarded.
-    shuffle=False: If set to True, the indices of all input mass arrays their and corresponding points
+    shuffle=False: If set to True, the indices of all input mass arrays and their corresponding points
         are randomly shuffled.
         
     Returns
