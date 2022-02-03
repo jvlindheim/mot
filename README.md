@@ -1,8 +1,6 @@
 # MOT
-Approximative algorithms for computing sparse Wasserstein-2 multi-marginal optimal transport plans and corresponding free support barycenters.
+Implementations of the algorithms in the paper [Approximative Algorithms for Multi-Marginal Optimal Transport and Free-Support Wasserstein Barycenters (von Lindheim, 2022)](https://arxiv.org/abs/2202.00954).
 Using the `emd` OT solver from the [Python Optimal Transport (POT)](https://pythonot.github.io/index.html) package, which is a wrapper of [this network simplex solver](https://github.com/nbonneel/network_simplex), which, in turn, is based on an implementation in the [LEMON](http://lemon.cs.elte.hu/pub/doc/latest-svn/index.html) C++ library.
-
-Johannes von Lindheim, 2021
 
 ## Installation
 1. Download the code or clone the Github repository with
