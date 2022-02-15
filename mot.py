@@ -248,7 +248,8 @@ def bary_from_greedy_plans(plans, bary_masses, posns, masses, weights, precision
     
     Parameters
     ----------
-    plans: array of transport plans from approximated barycenter to original measure.
+    plans: array of "permutation plans" from approximated barycenter to original measure.
+        That is, the transport plans, where the entries are only ones.
     bary_masses: MOT masses corresponding to the support tuples.
     posns: Measure support positions list/array of length n of the original measures.
         Can be given just a 2d-array, if the positions are always the same.
