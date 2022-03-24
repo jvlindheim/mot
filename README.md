@@ -1,5 +1,6 @@
 # MOT
-Implementations of the algorithms in the paper [Approximative Algorithms for Multi-Marginal Optimal Transport and Free-Support Wasserstein Barycenters (von Lindheim, 2022)](https://arxiv.org/abs/2202.00954).
+Implementations of the algorithms in the paper [Approximative Algorithms for Multi-Marginal Optimal Transport and Free-Support Wasserstein Barycenters (von Lindheim, 2022)](https://arxiv.org/abs/2202.00954). If you only want to solve the corresponding barycenter problem, see also [this repository](https://github.com/jvlindheim/free-support-barycenters).
+
 Using the `emd` OT solver from the [Python Optimal Transport (POT)](https://pythonot.github.io/index.html) package, which is a wrapper of [this network simplex solver](https://github.com/nbonneel/network_simplex), which, in turn, is based on an implementation in the [LEMON](http://lemon.cs.elte.hu/pub/doc/latest-svn/index.html) C++ library.
 
 ## Installation
